@@ -3,6 +3,7 @@
 
 int main() 
 {
+    //Se define el struct
     struct alumno {
         char nombre[20];
         char direccion[20];
@@ -11,8 +12,10 @@ int main()
         float promedio;
     };
 
+    //Se define un array
     struct alumno alumnos[5];
 
+    //Se recolectan los datos
     for (int i = 0; i < 5; i++){
         printf("Ingrese los datos del alumno %i\n", i + 1);
 
@@ -35,6 +38,7 @@ int main()
         scanf("%f", &alumnos[i].promedio);
     }
 
+    //Se imprime el array
     for (int i = 0; i < 5; i++){
         printf("Alumno %i:\n", i + 1);
         puts("Nombre: ");
